@@ -13,8 +13,9 @@
 
 ## 解决方案
 
-* 迭代方案
-* 递归方案
+* [迭代方案](https://github.com/lflxp/accumulation/blob/master/algorithm/reverselinkedlist/reverse-linked-list.go)
+* [递归方案](https://github.com/lflxp/accumulation/blob/master/algorithm/reverselinkedlist/reverse-linked-list.go)
+* [测试算法](https://github.com/lflxp/accumulation/blob/master/algorithm/reverselinkedlist/reverse-linked-list_test.go)
 
 ## 进阶
 
