@@ -39,7 +39,7 @@ func NewList() *SingleListNode {
 
 // https://blog.csdn.net/Charliewolf/article/details/82622014
 // 通过迭代方案
-func 反转单链表1(head *SingleListNode) *SingleListNode {
+func Fun_反转单链表1(head *SingleListNode) *SingleListNode {
 	// 先声明两个变量
 	// 前一个节点
 	var pre *SingleListNode
@@ -61,7 +61,7 @@ func 反转单链表1(head *SingleListNode) *SingleListNode {
 
 // https://studygolang.com/articles/15711
 // 迭代
-func 反转单链表2(head *SingleListNode) *SingleListNode {
+func Fun_反转单链表2(head *SingleListNode) *SingleListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -84,7 +84,7 @@ var endNode *SingleListNode
 // 递归方式
 // 进阶：你可以迭代或递归地反转链表。你能否用两种方法解决这道题？
 // http://www.voidcn.com/article/p-kvpkwcjz-bpc.html
-func 递归反转单链表(head *SingleListNode) {
+func Fun_递归反转单链表(head *SingleListNode) {
 	if head == nil {
 		return
 	}
@@ -95,7 +95,7 @@ func 递归反转单链表(head *SingleListNode) {
 		return
 	}
 
-	递归反转单链表(head.Next)
+	Fun_递归反转单链表(head.Next)
 	endNode.Next = head
 	endNode = head
 	endNode.Next = nil
@@ -104,7 +104,7 @@ func 递归反转单链表(head *SingleListNode) {
 // 思路
 // 使用迭代的方式反转链表大家已经很熟了，其实利用递归调用栈的特性，我们也可以轻松做到链表反转。
 // 链表反转后，原链表的最后一个结点，会变成新表的头结点。因此我们可以设递归函数总是返回当前链表的最后一个结点，这样最深的一层递归调用就是原链表的尾结点，也就是新表的头结点。此后每一次递归调用结束，调用栈都会回到原表的倒数第二个结点，也就是新表的正数第二结点。确定这些后，我们只需要把每一次递归的遍历出的当前结点按顺序保存起来就好了。
-func reverseList(node *SingleListNode) *SingleListNode {
-	递归反转单链表(node)
+func ReverseList(node *SingleListNode) *SingleListNode {
+	Fun_递归反转单链表(node)
 	return newList
 }
