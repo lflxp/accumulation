@@ -6,6 +6,7 @@
 // 若右数组的长度大于1， 那么对右数组实施归并排序
 // 将左右数组进行合并
 // https://blog.csdn.net/k_koris/article/details/80508543
+// https://blog.csdn.net/qq_36520153/article/details/82894216 有图
 
 package math
 
