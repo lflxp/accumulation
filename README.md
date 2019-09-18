@@ -39,4 +39,5 @@ knowledge、experience、more and more
 # 设计模式
 
 * [设计模式](https://www.jianshu.com/p/ea4d4d97b0c9)
+* [Graphic Design Patterns](https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/simple_factory.html)
 
