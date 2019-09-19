@@ -1,5 +1,7 @@
 # 适配器模式
 
+https://design-patterns.readthedocs.io/zh_CN/latest/structural_patterns/adapter.html#id17
+
 适配器模式用于转换一种接口适配另一种接口。
 
 实际使用中Adaptee一般为接口，并且使用工厂函数生成实例。
