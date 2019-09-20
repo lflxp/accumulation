@@ -9,6 +9,12 @@ leetcode 206 反转一个SingleListNode
 
 输入: 1->2->3->4->5->NULL
 输出: 5->4->3->2->1->NULL
+
+图解：
+https://www.cnblogs.com/mafeng/p/7149980.html
+
+使用3个指针遍历单链表，逐个链接点进行反转。
+技巧：一个全左子树变成全右子树 划分两个空间通过指针进行节点反转链接
 */
 type SingleListNode struct {
 	Index int
