@@ -39,7 +39,13 @@ func NewList() *SingleListNode {
 
 // https://blog.csdn.net/Charliewolf/article/details/82622014
 // 通过迭代方案
+// 1->2->3->4->5->null
+// null<-1  2->3->4->5
+// null<-1<-2<-3<-4<-5
 func Fun_反转单链表1(head *SingleListNode) *SingleListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
 	// 先声明两个变量
 	// 前一个节点
 	var pre *SingleListNode
@@ -50,10 +56,12 @@ func Fun_反转单链表1(head *SingleListNode) *SingleListNode {
 		// 保存头节点的下一个节点
 		next = head.Next
 		// 将头节点指向前一个节点
+		// 将链表扳断 head的Next向左指向
 		head.Next = pre
 		// 更新前一个节点
 		pre = head
 		// 更新头节点
+		// head是右侧断的链表 即待反转的链表
 		head = next
 	}
 	return pre
